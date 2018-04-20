@@ -9,4 +9,7 @@ public interface UserDao {
     /*查询所有用户信息*/
     List<User> getUserInfo();
 
+    /*根据userCode更新用户信息*/
+    int updateUserInfo(String userCode);
+
 }
