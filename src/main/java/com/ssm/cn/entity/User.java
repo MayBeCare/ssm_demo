@@ -10,6 +10,8 @@ public class User {
 
     private Integer userAge;
 
+    private String userSexName;      //不属于数据库的字段，其为SQl查询定义的别名
+
     public String getUserCode() {
         return userCode;
     }
@@ -40,5 +42,13 @@ public class User {
 
     public void setUserAge(Integer userAge) {
         this.userAge = userAge;
+    }
+
+    public String getUserSexName() {
+        return userSexName;
+    }
+
+    public void setUserSexName(String userSexName) {
+        this.userSexName = userSexName;
     }
 }

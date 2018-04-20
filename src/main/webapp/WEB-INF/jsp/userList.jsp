@@ -7,10 +7,13 @@
   Time: 21:28
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>用户列表</title>
+    <title>用户列表页</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -33,7 +36,7 @@
                     <tr>
                         <td>${u.userCode}</td>
                         <td>${u.userName}</td>
-                        <td>${u.userSex}</td>
+                        <td>${u.userSexName}</td>
                         <td>${u.userAge}</td>
                     </tr>
                 </c:forEach>
@@ -48,5 +51,4 @@
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </html>
