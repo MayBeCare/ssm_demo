@@ -10,4 +10,15 @@
         select * from user_info
     </select>
 
+    <!--根据userCode更新，如果实体值为空，则不更新（动态update）-->
+    <update id="updateUserInfo" parameterType="User">
+        update user_info
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userName!=null">user_name=#{userName},</if>
+            <if test="userSex!=null">user_sex=#{userSex},</if>
+            <if test="userAge!=null">user_age=#{userAge},</if>
+        </trim>
+        WHERE user_code=#{userCode}
+    </update>
+
 </mapper>

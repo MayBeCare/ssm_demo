@@ -10,6 +10,6 @@ public interface UserDao {
     List<User> getUserInfo();
 
     /*根据userCode更新用户信息*/
-    int updateUserInfo(String userCode);
+    int updateUserInfo(User user);
 
 }
