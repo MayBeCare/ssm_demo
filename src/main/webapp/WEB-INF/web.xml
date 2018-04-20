@@ -18,6 +18,8 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring/spring-*.xml</param-value>
       </init-param>
+      <!--随服务器一同启动 -->
+      <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
