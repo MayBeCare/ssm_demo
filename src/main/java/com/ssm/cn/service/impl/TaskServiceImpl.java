@@ -11,7 +11,7 @@ public class TaskServiceImpl implements TaskService{
 
     @Override
     public void taskJob() {
-        System.out.println("定时任务开始");
+
         System.out.println("现在时间：" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
